@@ -11,11 +11,19 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
      <script type="text/babel">
         class Msg extends React.Component {
-          render() {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    answer: "The Answer to the Ultimate Question of Life, the Universe, and Everything is",
+                    number: 42
+                }
+            }
+            render() {
             return (
               <div>
                 <h1>Here is a paragraph</h1>
                 <h2>{this.props.message}</h2>
+                <p>{this.state.answer} {this.state.number}</p>
               </div>
             );
           }
