@@ -1,0 +1,3 @@
+>3 . Why does React only allow information to be passed down in the hierarchy? What are the advantages and disadvantages of this approach? Discuss this topic with your mentor.
+
+A: Uni-directional flow allows for more control. It also provides simplicity when it comes to debugging the program. Predictability is also a benefit from uni-directional flow because you know what is going to change, what is going to make the change and where the change is going to happen. 
