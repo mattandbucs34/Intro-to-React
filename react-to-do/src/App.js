@@ -15,8 +15,8 @@ class App extends Component {
     };
   }
 
-deleteToDo(index) {
-  this.setState({ todos: this.state.todos.filter((_,i) => i !== index)});
+deleteToDo(todo) {
+  this.setState({ todos: this.state.todos.filter(item => item !== todo)});
 }
 
 handleChange(e) {
@@ -46,7 +46,7 @@ toggleComplete(index) {
               description = { todo.description } 
               isCompleted = {todo.isCompleted}
               toggleComplete = { () => this.toggleComplete(index) }
-              deleteToDo ={ () => this.deleteToDo(index) }
+              deleteToDo ={ () => this.deleteToDo(todo) }
               /> 
             )
           }
